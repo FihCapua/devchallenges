@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body{
+    width: 100%;
+    max-width: 500px;
+    background-color: #181719;
+}
+
+.menu{
+    background-color: #181719;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    transform: translateX(-100%);
+    transition: transform 200ms linear;
+    z-index: 1;
+}
+
+.menu_open{
+    transform: translateX(0);
+}
+
+.btnMenu{
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    text-indent: -9999px;
+    padding: 3px 15px;
+    margin: 15px 0;
+}
+
+.btnMenu_open{
+    background-image: url(../img/menu-open.svg);
+}
+
+.btnMenu_close{
+    background-image: url(../img/menu-close.svg);
+    margin-bottom: 30px;
+}
+
+.menu-item{
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.menu-item-action{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-item-action:hover{
+    font-weight: bold;
+}
+
+.logo__box{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    border: 1px solid #fff;
+    width: 120px;
+    height: 35px;
+}
+
+.logo__box--title{
+    display: flex;
+    align-items: center;
+    font-family: 'Crimson Pro', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 8px;
+}
+
+.wrapper{
+    width: 100%;
+}
+
+.content__text{
+    margin-left: 12px;
+}
+
+.content__text--title{
+    font-family: 'Lora', serif;
+    color: #fff;
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.content__text--paragraph{
+    width: 269px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 25px;
+    line-height: 22px;
+}
+
+.content__text--subparagraph{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.content__room--picture--img{
+    padding: 7px;
+    width: 305px;
+    height: 220px;
+    transform: scaleX(-1);
+}
+
+.content__box{
+    position: absolute;
+    top: 465px;
+    left: 25px;
+    width: 265px;
+    height: 138px;
+    background-color: #181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content__box{
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.content__box--img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 7px 10px;
+}
+
+.content__box--words {
+    margin-top: 12px;
+}
+
+.content__box--title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+
+.content__box--subtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: #828282;
+}
+
+.content_box--text{
+    font-family: 'Lora', serif;
+    color: #FFFFFF;
+    width: 210px;
+    line-height: 23px;
+    margin: 0 35px;
+}
+
+.footer{
+    margin-top: 140px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer--text,
+.footer--link{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (min-width: 1400px){
+    body{
+        width: 100%;
+        max-width: 1400px;
+    }
+
+    .logo__box{
+        right: 85px;
+    }
+
+    .content__text--title{
+        margin-top: 180px;
+        margin-left: 70px;
+        font-size: 48px;
+    }
+
+    .content__text--paragraph{
+        width: 360px;
+        margin-left: 70px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .content__text--subparagraph{
+        margin-top: 48px;
+        margin-left: 70px;
+        font-size: 18px;
+    }
+
+    .content__room--picture {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -300px;
+    }
+
+    .content__room--picture--img{
+        width: 821.11px;
+        height: 586.53px;
+    }
+
+    .content__box{
+        margin-top: 260px;
+        margin-left: 890px;
+        width: 330px;
+        height: 170px;
+    }
+
+    .content__box--img{
+        margin: 5px 0 0 25px;
+    }
+
+    .content_box--text {
+        font-size: 21px;
+        line-height: 31px;
+    }
+
+    .content__box--words {
+        margin: 10px 0 12px 0;
+        padding: 5px;
+    }
+}
