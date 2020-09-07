@@ -176,10 +176,10 @@ body{
     text-decoration: none;
 }
 
-@media (min-width: 1400px){
+@media (min-width: 1200px){
     body{
         width: 100%;
-        max-width: 1400px;
+        max-width: 1200px;
     }
 
     .logo__box{
@@ -212,13 +212,13 @@ body{
     }
 
     .content__room--picture--img{
-        width: 821.11px;
-        height: 586.53px;
+        width: 715px;
+        height: 500px;
     }
 
     .content__box{
-        margin-top: 260px;
-        margin-left: 890px;
+        margin-top: 155px;
+        margin-left: 740px;
         width: 330px;
         height: 170px;
     }
