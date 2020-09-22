@@ -199,14 +199,16 @@ body {
     }
 
     .content{
+        position: relative;
+        top: 130px;
         width: 25%;
     }
 
     .content__secundary {
         position: relative;
-        bottom: 240px;
+        bottom: 100px;
         width: 50%;
-        margin-left: 460px;
+        margin-left: 550px;
     }
 
     .content__room-picture-img {
@@ -222,10 +224,6 @@ body {
 @media (min-width: 1440px) {
     .main {
         max-width: 1440px;
-    }
-
-    .header { 
-        margin-bottom: 160px;
     }
 
     .content {
