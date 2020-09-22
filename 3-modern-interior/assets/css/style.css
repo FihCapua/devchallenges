@@ -224,6 +224,10 @@ body {
         max-width: 1440px;
     }
 
+    .header { 
+        margin-bottom: 160px;
+    }
+
     .content {
         margin-top: 10%;
     }
