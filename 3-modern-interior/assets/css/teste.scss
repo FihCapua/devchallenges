@@ -1,0 +1,17 @@
+@mixin teste(){
+    color: black;
+    padding: 20px;
+    margin: 10px;
+}
+
+.banner {
+    @include teste();
+
+    &__logo {
+        color: red;
+    }
+
+    &__menu {
+        padding: 10px;
+    }
+}

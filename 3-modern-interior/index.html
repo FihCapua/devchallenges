@@ -3,84 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error 404</title>
+    <title>Modern interior</title>
 
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header class="content__wrapper">
-        <nav class="wrap__menu">
-            <a href="#menu" class="btnMenu btnMenu_open">Menu</a>
+    <main class="main">
+        <header class="header">
+            <div class="header__logo">
+                <h1 class="header__logo-title">This Interior</h1>
+            </div>
 
-            <ul id="menu" class="menu">
-                <li class="btnMenu btnMenu_close">Sair</li>
-                <li class="menu-item">
-                    <a class="menu-item-action" href="#">Home</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-item-action" href="#">Collection</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-item-action" href="#">About</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-item-action" href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
+            <nav class="header__menu">
+                <a href="#menu" class="header__hamburguer header__hamburguer--open"></a>
 
-        <div class="logo__box">
-            <h1 class="logo__box--title">This Interior</h1>
-        </div>
-    </header>
+                <ul id="menu" class="menu">
+                    <a href="#menu" class="header__hamburguer header__hamburguer--close"></a>
 
-    <section class="wrapper__content">
-        <div class="content__text">
-            <h2 class="content__text--title">
-                Modern interior
-            </h2>
+                    <div class="menu__item">
+                        <li class="menu__item-list">
+                            <a class="menu__item-link" href="#">Home</a>
+                        </li>
+                        <li class="menu__item-list">
+                            <a class="menu__item-link" href="#">Collection</a>
+                        </li>
+                        <li class="menu__item-list">
+                            <a class="menu__item-link" href="#">About</a>
+                        </li>
+                        <li class="menu__item-list">
+                            <a class="menu__item-link" href="#">Contact</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
 
-            <p class="content__text--paragraph">
-                A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.
-            </p>
+        <section class="content">
+            <div class="content__text">
+                <h2 class="content__text-title">
+                    Modern interior
+                </h2>
 
-            <p class="content__text--subparagraph">
-                Read more &rarr;
-            </p>
-        </div>
-    </section>
+                <p class="content__text-paragraph">
+                    A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.
+                </p>
 
-    <section class="wrapper__room">
+                <p class="content__text-subparagraph">
+                    Read more &rarr;
+                </p>
+            </div>
+        </section>
 
-        <div class="content__room--picture">
-            <img class="content__room--picture--img" src="./assets/img/room.png" alt="Room Picture">
-        
-            <div class="content__box">
-                <figure>
-                    <img class="content__box--img" src="./assets/img/image-profile.png" alt="Profile Image">
-                </figure>
+        <section class="content__secundary">
 
-                <div class="content__box--words">
-                    <p class="content__box--title">
-                        Aliza Webber
-                    </p>
-        
-                    <p class="content__box--subtitle">
-                        Interior designer
-                    </p>
-                </div>
+            <div class="content__room-picture">
+                <img class="content__room-picture-img" src="./assets/img/room.png" alt="Room Picture">
+            </div>
 
-                    <p class="content_box--text">
+            <section class="content__room">
+
+                <div class="content__room-box">
+                    <figure>
+                        <img class="content__room-box--img" src="./assets/img/image-profile.png" alt="Profile Image">
+                    </figure>
+                
+                    <div class="content__room-box--words">
+                        <p class="content__room-box--title">
+                            Aliza Webber
+                        </p>
+                
+                        <p class="content__room-box--subtitle">
+                            Interior designer
+                        </p>
+                    </div>
+                
+                    <p class="content__room-box--text">
                         Designed in 2020 by Aliza Webber
                     </p>
-            </div>
-        </div>
-    </section>
+                </div>
+            </section>
+            
+        </section>
 
-    <footer class="footer">
-        <p class="footer--text">FihCapua <a class="footer--link" href="https://devchallenges.io/profile/ktrRcxRoGroP4w8azxpd" target="_blank">@DevChallenges.io</a></p>
-    </footer>
+        <footer class="footer">
+            <hr class="footer__line"><p class="footer__text">FihCapua <a class="footer__text-link" href="https://devchallenges.io/profile/ktrRcxRoGroP4w8azxpd" target="_blank">@DevChallenges.io</a></p></hr>
+        </footer>
+    </main>
 
     <script src="./assets/js/main.js"></script>
 </body>
